@@ -38,60 +38,60 @@
                 lower_layer {
                         label = "VIMNAV";
 // -------------------------------------------------------------------------------
-// |  TAB |     |  w  |     |     |     |   |     |     |  <- |     |     |      |
+// |      |     |  w  |     |     |     |   |     |     |  <- |     |     |      |
 // |      | ->  |     |  <{ |  }> |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |  x  |     |     |  b  |   |     |  <[ |  ]> |     |     |      |
-//                    | GUI |     | SPC |   | ENT | SYS | BsW |
+// |      |     |  x  |     |     |  b  |   |     |  <[ |  ]> |     |     |      |
+//                    |     |     |     |   |     | SYS | BsW |
                         bindings = <
-   &kp TAB    &trans        &kp LA(RIGHT) &trans       &trans        &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
-   &trans     &kp LG(RIGHT) &trans        &kp LG(LBRC) &kp LG(RBRC)  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &trans &trans
-   &kp LSHFT  &trans        &kp DEL       &trans       &trans        &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
-                                          &kp LGUI     &trans        &kp SPACE      &kp RET  &mo SYSTEM &kp LA(BSPC)
+   &trans &trans        &kp LA(RIGHT) &trans       &trans        &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
+   &trans &kp LG(RIGHT) &trans        &kp LG(LBRC) &kp LG(RBRC)  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &trans &trans
+   &trans &trans        &kp DEL       &trans       &trans        &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
+                                      &trans       &trans        &trans      &trans  &mo SYSTEM &kp LA(BSPC)
                         >;
                 };
 
                 raise_layer {
                         label = "SYMBOL";
 // -------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// | CTRL |  {  |  }  |  (  |  )  | '|' |   |     |  -  |  _  |  =  |  +  |  `   |
-// | SHFT |  ~  |  `  |  [  |  ]  |     |   |     |     |     |     |     |  ~   |
-//                    | GUI | SYS | SPC |   | ENT |     | ALT |
+// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
+// |      |  {  |  }  |  (  |  )  | '|' |   |     |  -  |  _  |  =  |  +  |  `   |
+// |      |  ~  |  `  |  [  |  ]  |     |   |     |     |     |     |     |  ~   |
+//                    |     | SYS |     |   |     |     |     |
                         bindings = <
-   &kp  TAB  &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &trans
-   &kp LCTRL &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp PIPE    &kp MINUS &kp MINUS &kp UNDER       &kp EQUAL &kp PLUS &kp GRAVE
-   &kp LSHFT &kp TILDE &kp GRAVE &kp LBKT &kp RBKT &trans      &trans    &trans    &trans          &trans    &kp PIPE &kp TILDE
-                    	       &kp LGUI &mo SYSTEM &kp SPACE   &kp RET   &trans    &kp RALT
+   &trans &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &trans
+   &trans &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp PIPE    &kp MINUS &kp MINUS &kp UNDER       &kp EQUAL &kp PLUS &kp GRAVE
+   &trans &kp TILDE &kp GRAVE &kp LBKT &kp RBKT &trans      &trans    &trans    &trans          &trans    &kp PIPE &kp TILDE
+                    	      &kp LGUI &mo SYSTEM &trans    &trans   &trans    &trans
                         >;
                 };
 
                 system_layer {
                         label = "SYSTEM";
 // -------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   |     |     |     |     |     |      |
+// |      |     |     |     |     |     |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     | VoUp| VoDn|     | Mute| Play |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     |     |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
-   &kp TAB    &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &trans     &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
    &trans     &trans       &trans       &trans       &trans       &trans         &kp LEFT &kp C_VOL_DN &kp C_VOL_UP &trans &kp K_MUTE &kp C_PLAY_PAUSE
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &trans   &trans &trans    &trans &trans
-                                        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &trans
+                                        &trans       &trans       &trans         &trans   &trans   &trans
                         >;
                 };
 
                 numpad_layer {
                         label = "NUMPAD";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// -------------------------------------------------------------------------------
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
 // |      |     |     |     |     |     |   |  -  |  4  |  5  |  6  |  .  |      |
-// | SHFT |     |     |     |     |     |   |     |  1  |  2  |  3  |     |      |
-//                    | GUI |     | SPC |   | ENT |  0  |     |
+// |      |     |     |     |     |     |   |     |  1  |  2  |  3  |     |      |
+//                    |     |     |     |   |     |  0  |     |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans     &trans       &trans       &trans       &trans       &trans         &kp MINUS &kp N4   &kp N5 &kp N6    &kp DOT &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &kp N1   &kp N2 &kp N3    &trans &trans
-                                        &kp LGUI     &trans       &kp SPACE      &kp RET   &kp N0   &trans
+   &trans &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7   &kp N8 &kp N9    &kp N0  &trans
+   &trans &trans       &trans       &trans       &trans       &trans         &kp MINUS &kp N4   &kp N5 &kp N6    &kp DOT &trans
+   &trans &trans       &trans       &trans       &trans       &trans         &trans    &kp N1   &kp N2 &kp N3    &trans  &trans
+                                    &trans       &trans       &trans         &trans    &kp N0   &trans
                         >;
                 };
         };

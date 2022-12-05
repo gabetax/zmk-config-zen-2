@@ -36,17 +36,17 @@
                 };
 
                 lower_layer {
-                        label = "NAV";
+                        label = "VIMNAV";
 // -----------------------------------------------------------------------------------------
 // |  TAB |     |  w  |     |     |     |   |     |     |  <- |     |     |      |
-// |      | ->  |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |  x  |     |  b  |     |   |  << |  >> |     |     |     |      |
+// |      | ->  |     |  <{ |  }> |     |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |  x  |     |  b  |     |   |     |  <[ |  ]> |     |     |      |
 //                    | GUI |     | SPC |   | ENT | SYS | BsW |
                         bindings = <
-   &kp TAB    &trans        &kp LA(LEFT) &trans       &trans  &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
-   &trans     &kp LG(RIGHT) &trans       &trans       &trans  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &trans &trans
-   &kp LSHFT  &trans        &kp DEL      &trans       &trans  &kp LA(RIGHT)  &kp LG(LBRC) &kp LG(RBRC) &trans       &trans    &trans &trans
-                                         &kp LGUI     &trans  &kp SPACE      &kp RET  &mo SYSTEM &kp LA(BSPC)
+   &kp TAB    &trans        &kp LA(RIGHT) &trans       &trans  &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
+   &trans     &kp LG(RIGHT) &kp LG(LBRC)  &kp LG(RBRC) &trans  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &trans &trans
+   &kp LSHFT  &trans        &kp DEL       &trans       &trans  &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
+                                          &kp LGUI     &trans  &kp SPACE      &kp RET  &mo SYSTEM &kp LA(BSPC)
                         >;
                 };
 

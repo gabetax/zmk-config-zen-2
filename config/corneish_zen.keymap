@@ -55,12 +55,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
 // | CTRL |  {  |  }  |  (  |  )  | '|' |   |     |  -  |  _  |  =  |  +  |  `   |
-// | SHFT |     |     |  [  |  ]  |     |   |     |     |     |     |     |  ~   |
+// | SHFT |  ~  |  `  |  [  |  ]  |     |   |     |     |     |     |     |  ~   |
 //                    | GUI | SYS | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT   &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &trans
-   &kp LCTRL &kp LBRC &kp RBRC &kp LPAR &kp RPAR &kp PIPE    &kp MINUS &kp MINUS &kp UNDER       &kp EQUAL &kp PLUS &kp GRAVE
-   &kp LSHFT &trans   &trans   &kp LBKT &kp RBKT &trans      &trans    &trans    &trans          &trans    &kp PIPE &kp TILDE
+   &kp  TAB  &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &trans
+   &kp LCTRL &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp PIPE    &kp MINUS &kp MINUS &kp UNDER       &kp EQUAL &kp PLUS &kp GRAVE
+   &kp LSHFT &kp TILDE &kp GRAVE &kp LBKT &kp RBKT &trans      &trans    &trans    &trans          &trans    &kp PIPE &kp TILDE
                     	       &kp LGUI &mo SYSTEM &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };

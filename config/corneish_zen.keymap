@@ -45,15 +45,15 @@
     lower_layer {
       label = "VIMNAV";
 // --------------------------------------   --------------------------------------
-// |      |     |  w  |     |     |     |   |     |     |  <- |     |     |      |
-// |      | ->  |     |  <{ |  }> |     |   | LFT | DWN |  UP | RGT |  o  |      |
-// |      |     |  x  |  cc |     |  b  |   |     |  <[ |  ]> |     |     |      |
+// | ZAud |     |  w  |     |     |     |   |     |     |  <- |     |     |      |
+// | ZVid | ->  |     |  <{ |  }> |     |   | LFT | DWN |  UP | RGT |  o  |      |
+// | ZScr |     |  x  |  cc | AlPt|  b  |   |     |  <[ |  ]> |     |     |      |
 // -------------------|     |     | ### |   |     | SYS | BsW |-------------------
       bindings = <
-   &trans &trans        &kp LA(RIGHT) &trans       &trans        &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
-   &trans &kp LG(RIGHT) &trans        &kp LG(LBRC) &kp LG(RBRC)  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &vim_o &trans
-   &trans &trans        &kp DEL       &vim_cc      &trans        &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
-                                      &trans       &trans        &trans         &trans  &mo SYSTEM &kp LA(BSPC)
+   &kp LG(LS(A)) &trans        &kp LA(RIGHT) &trans       &trans        &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
+   &kp LG(LS(V)) &kp LG(RIGHT) &trans        &kp LG(LBRC) &kp LG(RBRC)  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &vim_o &trans
+   &kp LG(LS(S)) &trans        &kp DEL       &vim_cc      &kp LG(LA(C)) &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
+                                             &trans       &trans        &trans         &trans       &mo SYSTEM   &kp LA(BSPC)
       >;
     };
 
@@ -78,7 +78,7 @@
 // |      |     |     |     |     |     |   |     |     |     |     |     |      |
 // |      |     |     |     |     |     |   |     | VoUp| VoDn|     | Mute| Play |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |     |     |     |     |      |
-// -------------------|     |     |     |   |     |     |     |-------------------
+// -------------------|     | ### |     |   |     | ### |     |-------------------
       bindings = <
    &trans     &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
    &trans     &trans       &trans       &trans       &trans       &trans         &kp LEFT &kp C_VOL_DN &kp C_VOL_UP &trans &kp K_MUTE &kp C_PLAY_PAUSE

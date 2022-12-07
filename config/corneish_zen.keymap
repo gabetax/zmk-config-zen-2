@@ -31,7 +31,7 @@
   macros {
     ZMK_MACRO(vim_o,  bindings = <&kp LG(RIGHT) &kp ENTER>;)
     ZMK_MACRO(vim_cc, bindings = <&kp LG(LEFT) &kp LS(LG(RIGHT)) &kp LG(X)>;)
-    ZMK_MACRO(1o1, bindings = <&kp N1 &kp LS(P) &kp N1>;) // "1:1" is awkward. Using "P" instead of ":" due to Colemak translation on mac
+    ZMK_MACRO(one_on_one, bindings = <&kp N1 &kp LS(P) &kp N1>;) // "1:1" is awkward. Using "P" instead of ":" due to Colemak translation on mac
   };
 };
 
@@ -98,10 +98,10 @@
 // |      |  ~  |  `  |  [  |  ]  |     |   |     |     |     |     |     |  ~   |
 // -------------------|     |     |     |   |     | ### |     |-------------------
       bindings = <
-   &trans &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &trans
-   &trans &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp PIPE    &1o1      &kp MINUS &kp UNDER       &kp EQUAL &kp PLUS &kp GRAVE
-   &trans &kp TILDE &kp GRAVE &kp LBKT &kp RBKT &trans      &trans    &trans    &trans          &trans    &kp PIPE &kp TILDE
-                              &kp LGUI &trans   &trans      &trans    &trans    &trans
+   &trans &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET   &kp AMPS  &kp KP_MULTIPLY &kp LPAR  &kp RPAR &trans
+   &trans &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp PIPE    &one_on_one &kp MINUS &kp UNDER       &kp EQUAL &kp PLUS &kp GRAVE
+   &trans &kp TILDE &kp GRAVE &kp LBKT &kp RBKT &trans      &trans      &trans    &trans          &trans    &kp PIPE &kp TILDE
+                              &kp LGUI &trans   &trans      &trans      &trans    &trans
       >;
     };
 

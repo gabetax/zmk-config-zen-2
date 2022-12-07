@@ -31,7 +31,7 @@
   macros {
     ZMK_MACRO(vim_o,  bindings = <&kp LG(RIGHT) &kp ENTER>;)
     ZMK_MACRO(vim_cc, bindings = <&kp LG(LEFT) &kp LS(LG(RIGHT)) &kp LG(X)>;)
-    ZMK_MACRO(one_on_one, bindings = <&kp N1 &kp LS(P) &kp N1>;) // "1:1" is awkward. Using "P" instead of ":" due to Colemak translation on mac
+    ZMK_MACRO(one_on_one, bindings = <&macro_tap_time 0>, <&kp N1 &kp LS(P) &kp N1>;) // "1:1" is awkward. Using "P" instead of ":" due to Colemak translation on mac
   };
 };
 

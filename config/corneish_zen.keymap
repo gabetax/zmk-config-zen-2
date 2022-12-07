@@ -69,7 +69,7 @@
       bindings = <
    &lt NUMPAD TAB &kp Q        &kp W       &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
    &lt NUMPAD ESC &kp A        &kp S       &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT      &bmt LCTRL Z &bmt LALT X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+   &kp LSHFT      &bmt LCTRL Z &bmt LALT X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &caps_word
                             &kp LGUI MO_TOG(LOWER) &kp SPACE   &kp RET &mo RAISE &kp BSPC
       >;
     };

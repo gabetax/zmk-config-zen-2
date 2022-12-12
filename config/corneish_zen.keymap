@@ -80,12 +80,12 @@
 // --------------------------------------   --------------------------------------
 // | ZAud |     |  w  |  <~ |  `> |     |   |     |     |  <- |     |     |      |
 // | ZVid | ->  |     |  <{ |  }> |     |   | LFT | DWN |  UP | RGT |  o  |      |
-// | ZScr |     |  x  |  cc | AlPt|  b  |   |     |  <[ |  ]> |     |     |      |
+// |      |     |  x  |  cc | AlPt|  b  |   |     |  <[ |  ]> |     |     |      |
 // -------------------|     |     | ### |   |     |     | BsW |-------------------
       bindings = <
    &kp LG(LS(A)) &trans        &kp LA(RIGHT) &kp LG(TILDE) &kp LG(GRAVE) &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &trans
    &kp LG(LS(V)) &kp LG(RIGHT) &trans        &kp LG(LBRC)  &kp LG(RBRC)  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &vim_o &trans
-   &kp LG(LS(S)) &trans        &kp DEL       &vim_cc       &kp LG(LA(C)) &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
+   &trans        &trans        &kp DEL       &vim_cc       &kp LG(LA(C)) &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
                                              &trans        &trans        &trans         &trans       &trans       &kp LA(BSPC)
       >;
     };

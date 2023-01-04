@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define MO_TOG(layer) &mo_tog layer layer
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
@@ -46,15 +45,6 @@
       flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
-
-    mo_tog: behavior_mo_tog {
-      compatible = "zmk,behavior-hold-tap";
-      label = "mo_tog";
-      #binding-cells = <2>;
-      flavor = "hold-preferred";
-      tapping-term-ms = <200>;
-      bindings = <&mo>, <&tog>;
-    };
   };
 
   keymap {
@@ -71,7 +61,7 @@
    &lt NUMPAD TAB &kp Q        &kp W       &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
    &lt NUMPAD ESC &kp A        &kp S       &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT      &bmt LCTRL Z &bmt LALT X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                            &kp LGUI MO_TOG(LOWER) &kp SPACE   &kp RET &mo RAISE &kp BSPC
+                                &kp LGUI &mo LOWER &kp SPACE   &kp RET &mo RAISE &kp BSPC
       >;
     };
 

@@ -8,7 +8,6 @@
 #define SYSTEM  3
 #define NUMPAD  4
 
-
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
@@ -20,17 +19,17 @@
     combos {
         compatible = "zmk,combos";
         combo_numpad {
-            timeout-ms = <50>;
+            timeout-ms = <150>;
             key-positions = <15 16>; // S T
             bindings = <&mo NUMPAD>;
         };
         combo_magnet_screen_left {
-            timeout-ms = <50>;
+            timeout-ms = <250>;
             key-positions = <19 20>; // N E
             bindings = <&kp LC(LA(LG(LEFT)))>;
         };
         combo_magnet_screen_right {
-            timeout-ms = <50>;
+            timeout-ms = <250>;
             key-positions = <20 21>; // E I
             bindings = <&kp LC(LA(LG(RIGHT)))>;
         };
@@ -80,7 +79,7 @@
 // -------------------| GUI | LWR | SPC |   | ENT | RSE  | <Bs |-------------------
       bindings = <
    &lt NUMPAD TAB &kp Q        &kp W       &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O         &kp P           &kp BSLH
-   &lt NUMPAD ESC &kp A        &kp S       &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L         &kp SEMI        &kp SQT
+   &kp ESC        &kp A        &kp S       &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L         &kp SEMI        &kp SQT
    &kp LSHFT      &bmt LCTRL Z &bmt LALT X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &bmt RALT DOT &bmt RCTRL FSLH &kp RSHFT
                          &kp LGUI &mo LOWER &lt NUMPAD SPACE   &kp RET &mo RAISE &kp BSPC
       >;

@@ -26,19 +26,14 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_numpad {
-            timeout-ms = <37>;
-            key-positions = <15 16>; // S T
-            bindings = <&mo NUMPAD>;
-        };
         combo_magnet_screen_left {
-            timeout-ms = <37>;
-            key-positions = <19 20>; // N E
+            timeout-ms = <20>;
+            key-positions = <9 10>;
             bindings = <&kp LC(LA(LG(LEFT)))>;
         };
         combo_magnet_screen_right {
-            timeout-ms = <37>;
-            key-positions = <20 21>; // E I
+            timeout-ms = <20>;
+            key-positions = <10 11>;
             bindings = <&kp LC(LA(LG(RIGHT)))>;
         };
     };

@@ -92,14 +92,14 @@
     lower_layer {
       label = "VIMNAV";
 // ╭──────┬─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────┬──────╮
-// │ ZAud │     │  w  │  <~ │  `> │     │   │     │     │  <- │     │     │ Shot │
-// │ ZVid │ ->  │     │  <{ │  }> │     │   │ LFT │ DWN │  UP │ RGT │  o  │      │
+// │ ZAud │     │  w  │  <~ │  `> │ PgUp│   │     │     │  <- │     │     │ Shot │
+// │ ZVid │ ->  │     │  <{ │  }> │ PgDn│   │ LFT │ DWN │  UP │ RGT │  o  │      │
 // │      │     │  x  │  cc │ AlPt│  b  │   │     │  <[ │  ]> │     │     │      │
 // ╰──────┴─────┴─────┤     │     │ ### │   │     │     │ BsW ├─────┴─────┴──────╯
 //                    ╰─────┴─────┴─────╯   ╰─────┴─────┴─────╯
       bindings = <
-   &kp LG(LS(A)) &trans        &kp LA(RIGHT) &kp LG(TILDE) &kp LG(GRAVE) &trans         &trans       &trans       &kp LG(LEFT) &trans    &trans &kp LG(LS(N4))
-   &kp LG(LS(V)) &kp LG(RIGHT) &trans        &kp LG(LBRC)  &kp LG(RBRC)  &trans         &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &vim_o &trans
+   &kp LG(LS(A)) &trans        &kp LA(RIGHT) &kp LG(TILDE) &kp LG(GRAVE) &kp PG_UP      &trans       &trans       &kp LG(LEFT) &trans    &trans &kp LG(LS(N4))
+   &kp LG(LS(V)) &kp LG(RIGHT) &trans        &kp LG(LBRC)  &kp LG(RBRC)  &kp PG_DN      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT &vim_o &trans
    &trans        &trans        &kp DEL       &vim_cc       &kp LG(LA(C)) &kp LA(LEFT)   &trans       &kp LG(LBKT) &kp LG(RBKT) &trans    &trans &trans
                                              &trans        &trans        &trans         &trans       &trans       &kp LA(BSPC)
       >;
